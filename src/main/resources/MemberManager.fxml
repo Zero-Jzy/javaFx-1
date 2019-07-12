@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MemberController">
+    <children>
+        <TableView fx:id="tableView" prefHeight="394.0" prefWidth="800.0">
+            <columns>
+                <TableColumn fx:id="fullnameColnumn" prefWidth="254.0" text="Full Name" />
+                <TableColumn fx:id="avatarColnumn" minWidth="0.0" prefWidth="243.0" text="avatar" />
+                <TableColumn fx:id="remainTImeColnumn" minWidth="0.0" prefWidth="299.0" text="remainTime" />
+            </columns>
+        </TableView>
+        <JFXTextField fx:id="txtUsername" layoutX="21.0" layoutY="417.0" promptText="Username" />
+        <JFXTextField fx:id="txtPassword" layoutX="21.0" layoutY="478.0" promptText="Password" />
+        <JFXTextField fx:id="txtFullname" layoutX="234.0" layoutY="417.0" promptText="Full Name" />
+        <JFXButton layoutX="659.0" layoutY="417.0" onAction="#onSave" text="Save" />
+        <JFXButton layoutX="658.0" layoutY="484.0" onAction="#onDeactive" text="Deactive" />
+      <JFXTextField fx:id="txtAvatar" layoutX="442.0" layoutY="417.0" promptText="Avatar" />
+      <JFXTextField fx:id="txtRemainTIme" layoutX="234.0" layoutY="484.0" promptText="RemainTIme" />
+    </children>
+</AnchorPane>
